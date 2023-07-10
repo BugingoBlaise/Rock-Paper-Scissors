@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Papaer Scissors</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div id="main-div">
+      <div class="game-title">
+        <h1>Rock, Paper and Scissor</h1>
+      </div>
+      <div class="score-div">
+        <ul class="list-point">
+          <li>You: <span id="human-score">0</span></li>
+          <li>Computer: <span id="computer-score">0</span></li>
+        </ul>
+        <div class="game-status">
+          <p id="game-status">Status</p>
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="item-card" id="rock">
+          <div class="icon-box">
+            <i class="fa-brands fa-rockrms fa-2xl"></i>
+          </div>
+          <div class="text-box">Rock</div>
+        </div>
+        <div class="item-card" id="paper">
+          <div class="icon-box">
+            <i class="fa-regular fa-note-sticky fa-2xl"></i>
+          </div>
+          <div class="text-box">Paper</div>
+        </div>
+        <div class="item-card" id="scissor">
+          <div class="icon-box">
+            <i class="fa-solid fa-scissors fa-2xl"></i>
+          </div>
+          <div class="text-box">Scissor</div>
+        </div>
+      </div>
+      <div class="footer-div">
+        <h2 class="indicator-text">First to Scole 5 points win</h2>
+        <p class="alert-text" id="win-text"></p>
+      </div>
+    </div>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
